@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>Interactive Counter</title>
 </head>
+
 <body>
   <h1>Interactive Counter</h1>
   <h2>Account Holder Name: Peter Parker</h2>
@@ -11,5 +13,22 @@
   <h2>Click one button to follow</h2>
   <button onclick="increaseCount()">Follow</button>
   <script src="followers_count.js"></script>
+
+  <div id="onkeydownEvent" style="margin-top: 30px;">
+    <h1>On Key Down Example</h1>
+    <input type="text" id="myInput">
+    <p id="output"></p>
+  </div>
+
+
+  <script>
+    const input = document.getElementById("myInput")
+    const output = document.getElementById("output")
+
+    input.onkeydown = (event) => {
+      output.textContent = `Key pressed: ${event.key}`
+    }
+  </script>
 </body>
+
 </html>
