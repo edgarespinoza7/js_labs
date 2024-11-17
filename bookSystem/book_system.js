@@ -20,6 +20,7 @@ function addBook() {
   }
 }
 
+
 function showbooks() {
   const booksDiv = books.map((book, index) => `<h1>book Number: ${index + 1}</h1>
       <p><strong>Book Name: </strong>${book.name}</p>
@@ -31,6 +32,7 @@ function showbooks() {
   );
   document.getElementById('books').innerHTML = booksDiv.join('');
 }
+
 
 function clearInputs() {
   document.getElementById('bookName').value = '';
